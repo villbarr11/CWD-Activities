@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Buttons & Icons</title>
+</head>
+<body class="brown darken-3">
+    <div class="container">
+        <h1 class="green-text">Buttons & Icons</h1>
+        <!-- Standard Button -->
+        <button class="btn green darken-3 white-text">Read more</button>
+        <a href="" class="btn">Read more</a>
+        <br></br>
+        <button class="btn yellow darken-1 blue-text">Read more</button>
+        <a href="https://www.youtube.com/" class="btn waves-effect wave-red red-text white">YoutTube</a>
+
+        <!-- Buttons with material icons-->
+        <a href="" class="btn red darken-2">
+            <i class="material-icons left">android</i>
+            Buy now
+        </a>
+        <a href="" class="btn-large amber darken-2">
+            <i class="material-icons left">android</i>
+            Buy now
+        </a>
+
+        <!-- Floating Action Button-->
+<button class="btn-floating btn-large red darken-3 pulse">
+    <i class="material-icons">publish</i>
+</button>
+
+<div class="fixed-action-btn">
+    <button class="btn-floating btn-large pink darken-1 pulse">
+        <i class="material-icons">edit</i>
+    </button> 
+     <ul>
+        <li><a href="" class="btn-floating red">
+            <i class="material-icons">add_alert</i>
+        </a>
+    </li>
+        <li><a href="" class="btn-floating blue">
+            <i class="material-icons">add_a_photo</i>
+        </a>
+    </li>
+        <li><a href="" class="btn-floating green">
+            <i class="material-icons">add_box</i>
+        </a>
+    </li>
+        <li><a href="" class="btn-floating amber"> 
+            <i class="material-icons">alarm</i>
+        </a>
+    </li>
+</ul>  
+ </div> 
+</div>
+
+
+  
+  
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+   $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  }); 
+  </script>
+</body>
+</html> 

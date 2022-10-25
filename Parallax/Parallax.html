@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Parallax</title>
+</head>
+<br></br>
+<h1 class="heade center red-text">Parallax Sample</h1>
+<body>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img class="responsive-img" src="images/alien.jpg" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header grey-text center">Aliens</h2>
+      <a class="btn grey darken-3 waves-effect waves-light"
+       onclick="M.toast({html: 'Creative Web Design',
+       inDuration: 1000,
+       completeCallback: function () {
+        alert('Your toast was dismissed');
+       },
+       classes: 'rounded'
+      })">Toast</a>
+      <a class="btn tooltipped amber" data-position="Bottom" data-tooltip="I am a tooltip">Hover me</a>
+      <p> 
+         Alien encounters can be discriminated according to the extent to which 
+         the alien actant adheres to or departs from anthropocentric norms; in 
+         simple terms, we can distinguish between "human aliens" and "alien aliens." 
+         This article examines the nature of human aliens by analyzing Orson Scott 
+         Card's Ender trilogy, a work which theorizes and surveys possible sets of 
+         relations between terran and alien actants. It explores the problematics 
+         of alien aliens by looking at appropriate texts by Lem, Benford, 
+         and Clarke.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img class="responsive-img" src="images/ufo.jpg" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header grey-text center">UFO</h2>
+      <a href="https://www.bbc.com/news/world-us-canada-49901449" class="btn grey darken-3 waves-effect waves-light" 
+      onclick="">Read more</a>
+      <p>An unidentified flying object (UFO), more recently renamed by US officials as
+         a UAP (unidentified aerial phenomenon),[1] is any perceived aerial phenomenon
+          that cannot be immediately identified or explained. On investigation, most UFOs
+           are identified as known objects or atmospheric phenomena, while a small number
+            remain unexplained.</p>
+    </div>
+  </div>
+  
+
+  
+  
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      //Init Parallax
+    $('.parallax').parallax({
+      responsiveThreshold: 0
+    });
+    // Init Tooltip
+    $('.tooltipped').tooltip({
+      exitDelay: 1000
+    });
+  });
+  </script>
+</body>
+</html>

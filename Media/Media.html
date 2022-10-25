@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Media</title>
+</head>
+<body class="grey darken-2">
+    <div class="container">
+        <h1 class="amber-text">Media CSS</h1>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="images/1.jpg" alt="" class="responsive-img z-depth-5">
+            </div>
+            <div class="col s12 m6">
+                <img src="images/2.jpg" alt="" class="responsive-img circle z-depth-5">
+           </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-5">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="images/3.jpg" alt="" class="responsive-img circle z-depth-5">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                This is a square image. Add the "circle" class to it to make it appear circular.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Videos -->
+    <div class="row">
+        <div class="col s12">
+            <br class="video-container responsive">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/QljiYqgJ8V0" 
+                title="THAILAND v1.0 (Land of Smiles) - Trailer" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br></br>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/Mnwx_fB5ZVs" 
+                title="Hanggang Kailan - Orange&Lemons (Cover)" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br></br>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/fDEo5Gj776w" 
+                title="Where do broken hearts go with Jamwich band (Live session)" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <br class="row">
+        <div class="col s12 m6">
+        </div>
+        <br></br>
+        <div class="col s12 m6">
+            <img src="images/GN1.jpg" alt=""
+            class="materialboxed responsive-img">
+        </div>
+        <br></br>
+        <div class="col s12 m6">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="images/GN2.jpg" alt="">
+                        <div class="caption center-align blue-text">
+                            <h3>Gandang Nanany #2</h3>
+                            <h5 class="light text-lighten-3">Cotestant #2</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/GN3.jpg" alt="">
+                        <div class="caption center-align blue-text">
+                            <h3>Gandang Nanany #3</h3>
+                            <h5 class="light text-lighten-3">Cotestant #3</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/GN4.jpg" alt="">
+                        <div class="caption center-align blue-text">
+                            <h3>Gandang Nanany #4</h3>
+                            <h5 class="light text-lighten-3">Cotestant #4</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/GN5.jpg" alt="">
+                        <div class="caption center-align blue-text">
+                            <h3>Gandang Nanany #5</h3>
+                            <h5 class="light text-lighten-3">Cotestant #5</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/GN6.jpg" alt="">
+                        <div class="caption center-align blue-text">
+                            <h3>Gandang Nanany #6</h3>
+                            <h5 class="light text-lighten-3">Cotestant #6</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<br></br>
+
+    
+ 
+
+
+  
+  
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        // Init materialbox
+        $('.materialboxed').materialbox();
+        inDuration: 1000
+        outDuration: 4000
+        // Init Slider
+        $('.slider').slider({
+            indicator: true,
+            height: 1000,
+            interval: 6000
+        });
+    });
+  </script>
+</body>
+</html>

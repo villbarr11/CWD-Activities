@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Modal</title>
+</head>
+<body class="grey darken-3">
+    <!-- Modal Trigger -->
+<div class="container">
+    <h1 class="red-text">Modal System</h1>
+    <a href="#modal1" class="btn waves-effect amber waves-light modal-trigger">Modal 1</a>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal blue darken-2 white-text">
+        <div class="modal-content">
+            <h4>WHAT YOU NEED TO KNOW</h4>
+            <p>What is INTROVERT?</p>
+            <p> Introverts are typically more comfortable interacting with small groups of people rather than large groups (as at parties). 
+                The psychologist Carl Gustav Jung first introduced the terms introvert, introversion, extrovert, and extroversion in the early 
+                1900s to describe personality types that focus a person's energy on either the inner or outer world. The terms introvert and 
+                extrovert have since become widely popularized, with introvert 
+                often broadly used to mean "a quiet or shy person."</p>
+            <div class="modal-footer red ligthen-2">
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat white-text">Close</a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal with fixed footer -->
+        <!-- Modal trigger-->
+        <a href="#modal2" class="btn waves-effect pink darken-2 waves-light modal-trigger">Modal 2</a>
+<!-- Modal structure -->
+<div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content  lighten-1">
+        <h4>WHAT YOU NEED TO KNOW</h4>
+        <p>What is INTROVERT?</p>
+        <p> Introverts are typically more comfortable interacting with small groups of people rather than large groups (as at parties). 
+            The psychologist Carl Gustav Jung first introduced the terms introvert, introversion, extrovert, and extroversion in the early 
+            1900s to describe personality types that focus a person's energy on either the inner or outer world. The terms introvert and 
+            extrovert have since become widely popularized, with introvert 
+            often broadly used to mean "a quiet or shy person."</p>
+            <br></br>
+            <img src="Images/10.jpg" alt="">
+</div>
+<div class="modal-footer blue darken-2">
+    <a href="#!" class="modal-close waves-effect waves-red btn-flat white-text">Close</a>
+</div>
+</div>
+ <!---Bottom Sheet Modals-->
+<a href="#modal3" class="btn modal-trigger blue darken-1 waves-effect waves-light">Modal 3</a>
+
+<!-- Modal Structure -->
+<div id="modal3" class="modal bottom-sheet">
+    <div class="modal-content green ligthen-2">
+     <ul class="collection">
+            <li class="collection-item avatar red">
+                <i class="material-icons circle">folder</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                    Second Line
+                 </p>
+                 <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                 </a>
+            </li>
+            <li class="collection-item avatar blue darken-3">
+                <i class="material-icons circle">download</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                    Second Line
+                 </p>
+                 <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                 </a>
+            </li>
+            <li class="collection-item avatar yellow">
+                <img src="images/3.jpg" alt="" class="circle">
+                <span class="title">Title</span>
+                <p>First Line <br>
+                    Second Line
+                 </p>
+                 <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                 </a>
+            <li class="collection-item avatar purple">
+                <img src="images/4.jpg" alt="" class="circle">
+                <span class="title">Title</span>
+                <p>First Line <br>
+                    Second Line
+                 </p>
+                 <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                 </a>
+            </li>
+       </ul>
+    </div>
+    <div class="modal-footer green ligthen-2">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <!-- End of container -->
+ </div>
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.modal').modal();
+  }); 
+  </script>
+</body>
+</html>

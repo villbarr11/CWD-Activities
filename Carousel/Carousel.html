@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Carousel</title>
+</head>
+<body>
+
+<!-- carousel -->
+    <div class="carousel">
+        <a href="#one" class="carousel-item">
+            <img src="images/4.jpg" alt="">
+        </a>
+        <a href="#two" class="carousel-item">
+            <img src="images/5.jpg" alt="">
+        </a>
+        <a href="#three" class="carousel-item">
+            <img src="images/6.jpg" alt="">
+        </a>
+        <a href="#four" class="carousel-item">
+            <img src="images/7.jpg" alt="">
+        </a>
+    </div> 
+
+<!-- FuLL width slider -->    
+    <div class="carousel carousel-slider">
+        <a href="#five" class="carousel-item">
+            <img src="images/GN7.jpg" alt="">
+        </a>
+        <a href="#six" class="carousel-item">
+            <img src="images/GN8.jpg" alt="">
+        </a>
+        <a href="#seven" class="carousel-item">
+            <img src="images/GN9.jpg" alt="">
+        </a>
+    </div> 
+    <BR></BR>
+    
+    <!-- contest slider -->
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+            <a href="" class="btn waves-effect blue lighten-1 yellow-text darken-text-2">Button</a>
+        </div>
+        <div class="carousel-item red white-text">
+            <h2>First Panel</h2>
+        </div>
+        <div class="carousel-item amber white-text">
+            <h2>Second Panel</h2>
+        </div>
+        <div class="carousel-item green white-text">
+            <h2>Fift Panel</h2>
+        </div>
+        <div class="carousel-item yellow white-text">
+            <h2>Sixth Panel</h2>
+        </div>
+    </div>
+    <BR></BR>
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        // Init Floating action button
+     $('.fixed-action-btn').floatingActionButton();
+     // init carousel
+    $('.carousel').carousel(); 
+    // init full width slider
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
+   }); 
+   </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Small Project</title>
+</head>
+<body class="grey Lighten-2">
+  <nav class="red darken-2">
+    <div class="container">
+      <div class="nav-wrapper">
+      <a href="https://www.youtube.com/" class="brand-logo">YouTube Studio</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger right">
+        <i class="material-icons">menu</i>
+      </a> 
+      <ul class="right hide-on-med-and-down">
+        <li class="active">
+          <a href="project.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Comments</a>
+        </li>
+        <li>
+          <a href="#">Likes</a>
+        </li>
+        <li>
+          <a href="#">Reactions</a>
+        </li>
+          <a href="mobile.html"><i class="material-icons">more_vert</i></a>
+        </li>
+      </ul>   
+      </div>
+    </div>
+  </nav>
+ <!-- SideNav -->
+
+  <!--Section Stats -->
+  <section class="section section-stats center">
+    <div class="row">
+      <div class="col s12 m6 13">
+        <div class="card-panel amber darken-2 white-text center">
+          <i class="material-icons medium">chat</i>
+          <h5>Comments</h5>
+          <h3 class="counts">8,690</h3>
+        </div>
+      </div>
+      <div class="col s12 m6 13">
+        <div class="card-panel green darken-2 white-text center">
+          <i class="material-icons medium">people</i>
+          <h5>People Reach</h5>
+          <h3 class="counts">578,890</h3>
+        </div>
+      </div>
+      <div class="col s12 m6 13">
+        <div class="card-panel blue darken-2 white-text center">
+          <i class="material-icons medium">personal_video
+          </i>
+          <h5>Views</h5>
+          <h3 class="counts">889,820</h3>
+        </div>
+      </div>
+      <div class="col s12 m6 13">
+        <div class="card-panel pink darken-2 white-text center">
+          <i class="material-icons medium">thumb_up</i>
+          <h5>Likes</h5>
+          <h3 class="counts">484,928</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Visitor -->
+  <section class="section section-visitors grey darken-2">
+    <div class="row">
+      <div class="col s12 m6 l8">
+        <div id="chartContainer" style="height: 300px; width: 100%">
+        </div>     
+      </div>
+     </div>
+  </section>
+  <br><br>
+  
+  
+  <!-- Jquery CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="chart.js" ></script>
+
+  <script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav({
+      edge: 'right',
+      inDuration: 1000,
+      outDuration: 
+    });
+  });
+  </script>
+</body>
+</html >         
